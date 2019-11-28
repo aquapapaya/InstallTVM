@@ -1,11 +1,11 @@
 # How ot Install TVM
 ## Enviroment
-* Ubuntu 18.04.3 LTS, Intel(R) Core(TM) i7-7700, 16GB memory, NVIDIA GTX 1080
+- [ ] Linux (Ubuntu is recommended)
 - [ ] CUDA toolkit version >= 8.0 is required
-  * Use 'nvidia-smi' to check your version
+  - [ ] Use 'nvidia-smi' to check your version
 ## Notification
-* Some commands may need 'sudo'
-* Refer to https://docs.tvm.ai/install/from_source.html
+- [ ]  Some commands may need 'sudo'
+- [ ]  Refer to https://docs.tvm.ai/install/from_source.html
 ## Install ITRI certificate for Ubuntu
 - [ ] Download auto_ITRIRoot256_apped.tar
 * tar xvf auto_ITRIRoot256_apped.tar
@@ -23,7 +23,7 @@
 * apt install -y vim
 - [ ] LLVM 4.0 or higher is needed for build with LLVM
   * apt install -y llvm
-  * Use 'llvm-config --version' to check your version
+  - [ ] Use 'llvm-config --version' to check your version
 * apt install -y git
 ## Install TVM from source
 * cd ~
@@ -39,7 +39,7 @@
 ## Set the environment variable
 * cd ~
 * vi .bashrc
-- [ ] Add the following two lines/root/incubator-tvm
+- [ ] Add the following two to .bashrc
   * export TVM_HOME=/root/incubator-tvm/tvm-itri
   * export PYTHONPATH=$TVM_HOME/python:$TVM_HOME/topi/python:$TVM_HOME/nnvm/python:${PYTHONPATH}
-- [ ] source .bashrc
+* source .bashrc
