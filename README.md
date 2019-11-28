@@ -37,10 +37,9 @@
   * cmake ..
   * make -j4
   ## Set the environment variable
-  * cd ~
-  * vi .bashrc
-  - [ ] Add the following two lines
-    * /root/incubator-tvm
-    * export TVM_HOME=/[YOUR_HOME_DIRECTORY]/tvm-itri
-    * export PYTHONPATH=$TVM_HOME/python:$TVM_HOME/topi/python:$TVM_HOME/nnvm/python:${PYTHONPATH}
-    - [] source .bashrc
+ * cd ~
+ * vi .bashrc
+- [ ] Add the following two lines/root/incubator-tvm
+  * export TVM_HOME=/root/incubator-tvm/tvm-itri
+  * export PYTHONPATH=$TVM_HOME/python:$TVM_HOME/topi/python:$TVM_HOME/nnvm/python:${PYTHONPATH}
+  - [ ] source .bashrc
