@@ -1,6 +1,6 @@
 # How ot Install TVM
 ## Enviroment
-- [ ] Linux (Ubuntu is recommended)
+- [ ] Linux (Ubuntu 18.04 LTS is tested)
 - [ ] CUDA toolkit version >= 8.0 is required
   - [ ] Use 'nvidia-smi' to check your version
 ## Notification
@@ -12,7 +12,7 @@
 * cd ITRIRoot256/
 * ./auto_ITRIRoot256
 - [ ] Reboot
-## Install Required Libraries
+## Install required libraries
 - [ ] g++ 4.8 or higher
 - [ ] CMake 3.5 or higher
 * apt update
