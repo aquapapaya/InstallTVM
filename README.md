@@ -6,13 +6,13 @@
 ## Notification
 - [ ]  Some commands may need 'sudo'
 - [ ]  Refer to https://docs.tvm.ai/install/from_source.html
-## Install ITRI certificate for Ubuntu
+## Install ITRI Certificate for Ubuntu (Optional)
 - [ ] Download auto_ITRIRoot256_apped.tar
 * tar xvf auto_ITRIRoot256_apped.tar
 * cd ITRIRoot256/
 * ./auto_ITRIRoot256
 - [ ] Reboot
-## Install required libraries
+## Install Required Libraries
 - [ ] g++ 4.8 or higher
 - [ ] CMake 3.5 or higher
 * apt update
@@ -25,10 +25,12 @@
   * apt install -y llvm
   - [ ] Use 'llvm-config --version' to check your version
 * apt install -y git
-## Install TVM from source
+## Install TVM from Source
 * cd ~
 * git clone --recursive https://github.com/apache/incubator-tvm.git
 * cd incubator-tvm
+- [ ] Switch branches (optional)
+  * git checkout &lt;branch>
 * mkdir build
 * cp cmake/config.cmake build
 * cd build
@@ -36,7 +38,7 @@
   * vi config.cmake
 * cmake ..
 * make -j4
-## Set the environment variable
+## Set the Environment Variable
 * cd ~
 * vi .bashrc
 - [ ] Add the following two to .bashrc
