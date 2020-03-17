@@ -3,6 +3,9 @@
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
 - [ ] CUDA toolkit version >= 8.0 is required
   - [ ] Use 'nvidia-smi' to check your version
+- [ ] OpenCL
+  - [ ] Use 'clinfo' to check OpenCL platform and devices available on your system
+  * sudo apt install clinfo
 ## Notification
 - [ ]  Some commands may need 'sudo'
 - [ ]  Refer to https://docs.tvm.ai/install/from_source.html
