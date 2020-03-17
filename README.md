@@ -5,6 +5,13 @@
 - [ ] CUDA toolkit version >= 8.0 is required
   - [ ] Use 'nvidia-smi' to check your version
   - [ ] Use 'sudo nvidia-settings' to configure NVIDIA graphics driver
+- [ ] Deploy OpenCL runtime of Intel graphics
+  * sudo apt install apt-file
+  * sudo apt update
+  * apt-file find libOpenCL.so
+  * sudo add-apt-repository ppa:intel-opencl/intel-opencl
+  * sudo apt update
+  * sudo apt install intel-opencl-icd
 - [ ] OpenCL
   - [ ] Use 'clinfo' to check OpenCL platform and devices available on your system
   * sudo apt install clinfo
