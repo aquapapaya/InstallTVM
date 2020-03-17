@@ -1,7 +1,7 @@
 # How ot Install TVM
 ## Enviroment
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
-  - [ ] Find out installed graphics card by 'sudo lshw -C display'
+  - [ ] Find out installed graphics card by 'sudo lshw -C display' or 'lspci | grep -i --color 'vga\|3d\|2d''
 - [ ] CUDA toolkit version >= 8.0 is required
   - [ ] Use 'nvidia-smi' to check your version
   - [ ] Use 'sudo nvidia-settings' to configure NVIDIA graphics driver
