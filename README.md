@@ -36,6 +36,7 @@
 * apt install -y python3-pip
 * pip3 install numpy
 * pip3 install decorator
+* pip3 install scipy
 * apt install -y vim
 - [ ] LLVM 4.0 or higher is needed for build with LLVM
   * apt install -y llvm
