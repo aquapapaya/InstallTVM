@@ -1,8 +1,10 @@
 # How ot Install TVM
 ## Enviroment
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
+  - [ ] Find out installed graphics card by 'sudo lshw -C display'
 - [ ] CUDA toolkit version >= 8.0 is required
   - [ ] Use 'nvidia-smi' to check your version
+  - [ ] Use 'sudo nvidia-settings' to configure NVIDIA graphics driver
 - [ ] OpenCL
   - [ ] Use 'clinfo' to check OpenCL platform and devices available on your system
   * sudo apt install clinfo
