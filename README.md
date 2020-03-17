@@ -18,7 +18,8 @@
 - [ ] OpenCL
   - [ ] Use 'clinfo' to check OpenCL platform and devices available on your system
   * sudo apt install clinfo
-## Notification
+  * sudo apt install ocl-icd-opencl-dev
+## Notifisudo apt install ocl-icd-opencl-devcation
 - [ ]  Some commands may need 'sudo'
 - [ ]  Refer to https://docs.tvm.ai/install/from_source.html
 ## Install ITRI Certificate for Ubuntu (Optional)
