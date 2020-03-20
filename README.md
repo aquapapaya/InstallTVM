@@ -47,7 +47,7 @@
 * git clone --recursive https://github.com/apache/incubator-tvm.git
 * cd incubator-tvm
 - [ ] Switch branches (optional)
-  * git checkout &lt;branch>
+  * git checkout &lt;commit>
 * mkdir build
 * cp cmake/config.cmake build
 * cd build
@@ -65,4 +65,6 @@
 ## Create Branch from Existing Commit
 * git clone --recursive https://github.com/apache/incubator-tvm.git
 * cd incubator-tvm
-git checkout &lt;branch>
+* git checkout &lt;commit>
+* git checkout -b &lt;new_branch>
+* git push --set-upstream origin tvm_1212
