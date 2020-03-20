@@ -67,4 +67,4 @@
 * cd incubator-tvm
 * git checkout &lt;commit>
 * git checkout -b &lt;new_branch>
-* git push --set-upstream origin tvm_1212
+* git push --set-upstream origin &lt;new_branch>
