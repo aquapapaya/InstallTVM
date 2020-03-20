@@ -55,10 +55,14 @@
   * vi config.cmake
 * cmake ..
 * make -j4
-## Set the Environment Variable
+## Set Environment Variable
 * cd ~
 * vi .bashrc
 - [ ] Add the following two to .bashrc
   * export TVM_HOME=/root/incubator-tvm
   * export PYTHONPATH=$TVM_HOME/python:$TVM_HOME/topi/python:$TVM_HOME/nnvm/python:${PYTHONPATH}
 * source .bashrc
+## Create Branch from Existing Commit
+* git clone --recursive https://github.com/apache/incubator-tvm.git
+* cd incubator-tvm
+git checkout &lt;branch>
