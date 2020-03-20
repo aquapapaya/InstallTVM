@@ -1,4 +1,4 @@
-# How ot Install TVM
+# How to Install TVM
 ## Enviroment
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
   - [ ] Find out installed graphics card by 'sudo lshw -C display' or 'lspci | grep -i --color 'vga\|3d\|2d'
