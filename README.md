@@ -17,7 +17,7 @@
   * sudo apt install intel-opencl-icd
 - [ ] OpenCL
   - [ ] Use 'clinfo' to check OpenCL platform and devices available on your system
-  * sudo apt install clinfo
+  * <code>sudo apt install clinfo</code>
   * sudo apt install ocl-icd-opencl-dev
 ## Notification
 - [ ]  Some commands may need 'sudo'
