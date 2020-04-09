@@ -69,5 +69,4 @@
 * git checkout -b &lt;new_branch>
 * git push --set-upstream origin &lt;new_branch>
 
-
-<embed src="https://github.com/aquapapaya/InstallTVM/blob/master/SSD_result.pdf">
+https://github.com/aquapapaya/InstallTVM/blob/master/SSD_result.pdf
