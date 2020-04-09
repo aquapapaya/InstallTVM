@@ -70,3 +70,4 @@
 * git push --set-upstream origin &lt;new_branch>
 
 https://github.com/aquapapaya/InstallTVM/blob/master/SSD_result.pdf
+https://github.com/aquapapaya/InstallTVM/blob/master/SSD_result.html
