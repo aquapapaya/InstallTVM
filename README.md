@@ -69,4 +69,5 @@
 * git checkout -b &lt;new_branch>
 * git push --set-upstream origin &lt;new_branch>
 
-* Evalutation result:  https://github.com/aquapapaya/InstallTVM/blob/master/SSD_result.pdf
+| Model | Top-1of snps_ev | Top-1 of OpenCL | Top-5 of snps_ev' | Top-5 of OpenCL |
+|:-------------:|:-----------:|:-----------:|:-----------:|
