@@ -1,11 +1,3 @@
-| Model        | Top-1 snps_ev | Top-1 OpenCL | Top-5 snps_ev | Top-5 OpenCL |
-|--------------|:-------------:|:------------:|:-------------:|:------------:|
-| DenseNet     |           80% |          80% |           90% |          90% |
-| Inception V1 |           85% |          85% |           90% |          90% |
-| MobileNet V2 |           85% |          85% |           95% |          95% |
-| ResNet-50    |           95% |          95% |          100% |         100% |
-| VGG-16       |           80% |          80% |          100% |         100% |
-
 # How to Install TVM
 ## Enviroment
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
