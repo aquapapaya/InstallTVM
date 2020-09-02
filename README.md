@@ -68,3 +68,5 @@
 * git checkout &lt;commit>
 * git checkout -b &lt;new_branch>
 * git push --set-upstream origin &lt;new_branch>
+## Misc.
+* https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-nouveau
