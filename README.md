@@ -80,6 +80,6 @@
 * git config --list
 * git push --set-upstream &lt;remote_name> &lt;new_branch>
 * git tag -l
-* git push --set-upstream --tags aquapapaya
+* git push --set-upstream --tags &lt;remote_name>
 ## Misc.
 * https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-nouveau
