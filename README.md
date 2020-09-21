@@ -68,5 +68,16 @@
 * git checkout &lt;commit>
 * git checkout -b &lt;new_branch>
 * git push --set-upstream origin &lt;new_branch>
+## Create Your Own TVM
+* git clone --recursive https://github.com/apache/incubator-tvm.git
+* cd incubator-tvm
+* git checkout &lt;commit>
+* git checkout -b &lt;new_branch>
+* git remote add &lt;remote_name> &lt;remote_URL>
+* git remote -v
+* git branch
+* git config --global user.email &lt;email>
+* git config --list
+* git push --set-upstream &lt;remote_name> &lt;new_branch>
 ## Misc.
 * https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-nouveau
