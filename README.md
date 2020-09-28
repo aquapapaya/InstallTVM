@@ -79,6 +79,9 @@
 * git config --global user.email &lt;email>
 * git config --list
 * git push --set-upstream &lt;remote_name> &lt;new_branch>
+    * --set-upstream is equal to -u
+    * --set-upstream is used in the first upload
+    * git push &lt;remote_name> &lt;branch_name> for later upload
 * git tag -l
 * git push --set-upstream --tags &lt;remote_name>
 ## Misc.
