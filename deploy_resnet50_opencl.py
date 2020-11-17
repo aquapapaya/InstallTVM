@@ -1,6 +1,7 @@
 """
 Deploy Pre-Trained TensorFlow Lite ResNet-50
 ============================================
+By Kuen-Wey Lin <https://github.com/aquapapaya>
 https://github.com/aquapapaya/InstallTVM/releases/download/resnet50/resnet50_uint8_tf2.1_20200911_quant.tflite
 https://github.com/aquapapaya/InstallTVM/releases/download/resnet50/image_classification_small.tar.xz
 """
