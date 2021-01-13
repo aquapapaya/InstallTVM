@@ -84,5 +84,17 @@
     * git push &lt;remote_name> &lt;branch_name> for later upload
 * git tag -l
 * git push --set-upstream --tags &lt;remote_name>
+## Push Existing Repository to Code Hosting Service
+* cd [directory]
+* git remote add [name for the hosting] [hosting's .git]
+* git push -u [name for the hosting] --all
+* git push -u [name for the hosting] --tags
+## Push All New Repository to Code Hosting Service
+* cd [directory]
+* git init
+* git remote add [name for the hosting] [hosting's .git]
+* git add .
+* git commit -m "Initial commit"
+* git push -u [name for the hosting] master
 ## Misc.
 * https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-nouveau
