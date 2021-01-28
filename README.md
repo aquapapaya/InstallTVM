@@ -98,3 +98,4 @@
 * git push -u [name for the hosting] master
 ## Misc.
 * https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-nouveau
+* find ./ -type f -size +20M (find large files, in this example, 20MB)
