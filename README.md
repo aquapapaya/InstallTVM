@@ -46,6 +46,8 @@
 * pip3 install --upgrade pip
 * pip3 install Pillow
 * pip3 install tflite
+* pip3 install opencv-python
+* pip3 install easydict
 ## Install TVM from Source
 * cd ~
 * git clone --recursive https://github.com/apache/incubator-tvm.git
