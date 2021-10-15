@@ -42,6 +42,10 @@
   * apt install -y llvm
   - [ ] Use 'llvm-config --version' to check your version
 * apt install -y git
+## Install Optional Libraries
+* pip3 install --upgrade pip
+* pip3 install Pillow
+* pip3 install tflite
 ## Install TVM from Source
 * cd ~
 * git clone --recursive https://github.com/apache/incubator-tvm.git
