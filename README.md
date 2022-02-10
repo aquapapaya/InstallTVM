@@ -31,6 +31,7 @@
   * sudo apt install libnvinfer8=8.2.3-1+cuda11.4 libnvinfer-dev=8.2.3-1+cuda11.4 libnvinfer-plugin8=8.2.3-1+cuda11.4
   * sudo apt install cuda-cudart-11-4=11.4.148-1
   * sudo apt install libcusolver-11-4=11.2.0.120-1
+  * sudo apt install libcusparse-11-4=11.6.0.120-1
   * Ref: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/
 ## Notification
 - [ ]  Some commands may need 'sudo'
