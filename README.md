@@ -28,6 +28,7 @@
   * sudo apt upgrade
   * sudo apt install libcudnn8=8.2.4.15-1+cuda11.4
   * sudo apt install libcudnn8-dev=8.2.4.15-1+cuda11.4
+  * sudo apt install libnvinfer8=8.2.3-1+cuda11.4 libnvinfer-dev=8.2.3-1+cuda11.4 libnvinfer-plugin8=8.2.3-1+cuda11.4
   * Ref: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/
 ## Notification
 - [ ]  Some commands may need 'sudo'
