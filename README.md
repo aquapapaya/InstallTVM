@@ -20,6 +20,12 @@
   * <code>sudo apt install clinfo</code>
   * sudo apt install ocl-icd-opencl-dev
 - [ ] cuDNN for CUDA 11.4 for Ubuntu 20.04
+  * wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
+  * sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+  * sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
+  * sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+  * sudo apt update
+  * sudo apt upgrade
   * sudo apt install libcudnn8=8.2.4.15-1+cuda11.4
   * sudo apt install libcudnn8-dev=8.2.4.15-1+cuda11.4
   * Ref: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/
