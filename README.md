@@ -19,20 +19,6 @@
   - [ ] Use 'clinfo' to check OpenCL platform and devices available on your system
   * <code>sudo apt install clinfo</code>
   * sudo apt install ocl-icd-opencl-dev
-- [ ] cuDNN for CUDA 11.4 for Ubuntu 20.04
-  * wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
-  * sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
-  * sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
-  * sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
-  * sudo apt update
-  * sudo apt upgrade
-  * sudo apt install libcudnn8=8.2.4.15-1+cuda11.4
-  * sudo apt install libcudnn8-dev=8.2.4.15-1+cuda11.4
-  * sudo apt install libnvinfer8=8.2.3-1+cuda11.4 libnvinfer-dev=8.2.3-1+cuda11.4 libnvinfer-plugin8=8.2.3-1+cuda11.4
-  * sudo apt install cuda-cudart-11-4=11.4.148-1
-  * sudo apt install libcusolver-11-4=11.2.0.120-1
-  * sudo apt install libcusparse-11-4=11.6.0.120-1
-  * Ref: https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/
 ## Notification
 - [ ]  Some commands may need 'sudo'
 - [ ]  Refer to https://docs.tvm.ai/install/from_source.html
