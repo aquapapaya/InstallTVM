@@ -107,3 +107,8 @@
 * https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#runfile-nouveau
 * find ./ -type f -size +20M (find large files, in this example, 20MB)
 * git log --graph --oneline --all (visualize git log)
+### Upgrade cmake on Ubuntu
+* sudo apt remove cmake
+* pip3 install cmake
+* sudo ln /home/[account_name]/.local/bin/cmake /usr/bin/cmake
+* cmake --version
