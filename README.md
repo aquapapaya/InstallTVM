@@ -1,4 +1,4 @@
-# How to Install TVM
+![image](https://github.com/aquapapaya/InstallTVM/assets/44602406/0e15555a-6e55-4ebf-b0e5-cf032028ea54)# How to Install TVM
 ## Enviroment
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
   - [ ] Find out installed graphics card by 'sudo lshw -C display' or 'lspci | grep -i --color 'vga\|3d\|2d'
@@ -69,6 +69,29 @@
   * export TVM_HOME=/root/incubator-tvm
   * export PYTHONPATH=$TVM_HOME/python:$TVM_HOME/topi/python:$TVM_HOME/nnvm/python:${PYTHONPATH}
 * source .bashrc
+## Install PAPI (Ver. 6 is required for TVM)
+* git clone https://bitbucket.org/icl/papi.git
+* cd papi/src/
+* ./configure --prefix=$PWD/install
+* sudo sh -c "echo 2 > /proc/sys/kernel/perf_event_paranoid"
+  * Solve the problem: permission level does not permit operation
+* make && make install
+* cd install/bin
+* ./papi_avail
+  * To list available metrics
+## Install TVM and enable PAPI support
+* git clone --recursive https://github.com/apache/tvm.git
+* cd tvm/
+* mkdir build
+* cd build/
+* cp ../cmake/config.cmake .
+* find [the directory where PAPI is cloned] -name papi.pc
+* vi config.cmake to set: USE_LLVM ON
+* vi config.cmake to set: USE_PAPI [the directory where papi.pc exists]
+* cmake ..
+* make -j4
+* vi ~/.bashrc to set environment variable for TVM
+* source ~/.bashrc
 ## Create Branch from Existing Commit
 * git clone --recursive https://github.com/apache/incubator-tvm.git
 * cd incubator-tvm
