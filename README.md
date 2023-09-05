@@ -1,4 +1,4 @@
-![image](https://github.com/aquapapaya/InstallTVM/assets/44602406/0e15555a-6e55-4ebf-b0e5-cf032028ea54)# How to Install TVM
+# How to Install TVM
 ## Enviroment
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
   - [ ] Find out installed graphics card by 'sudo lshw -C display' or 'lspci | grep -i --color 'vga\|3d\|2d'
