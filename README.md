@@ -1,4 +1,10 @@
 # How to Install TVM
+## Use pip for installing TVM (Ubuntu 20.04 LTS is tested)
+### CPU only
+* <code>pip3 install apache-tvm</code>
+### CUDA and CPU
+* <code>pip3 install apache-tvm-cu102 -f https://tlcpack.ai/wheels</code>
+* Check [TLCPack](https://tlcpack.ai/) for more TVM packages
 ## Enviroment
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
   - [ ] Find out installed graphics card by 'sudo lshw -C display' or 'lspci | grep -i --color 'vga\|3d\|2d'
