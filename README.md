@@ -8,26 +8,21 @@
 - - -
 ## Enviroment
 - [ ] Linux (Ubuntu 18.04 LTS is tested)
-  - [ ] Find out installed graphics card by 'sudo lshw -C display' or 'lspci | grep -i --color 'vga\|3d\|2d'
+  - [ ] Find out installed graphics card by <code>sudo lshw -C display</code> or <code>lspci | grep -i --color 'vga\|3d\|2d'</code>
 - [ ] Upgrade graphics driver using Software Updater of Ubuntu
   - [ ] Click on the 'Additional Drivers' tab
   - [ ] Choose the latest driver provided by Ubuntu
 - [ ] CUDA toolkit version >= 8.0 is required
   - [ ] Use 'nvidia-smi' to check your version
   - [ ] Use 'sudo nvidia-settings' to configure NVIDIA graphics driver
-### Install OpenCL
+### Install OpenCL (tested on Ubuntu 22.04)
 * Install OpenCL development files
   * <code>sudo apt install ocl-icd-opencl-dev</code>
-* Check OpenCL platform and devices available on your system
+* Install the package of querying OpenCL information
   * <code>sudo apt install clinfo</code>
-  * <code>clinfo</code>
 * Deploy OpenCL runtime of Intel graphics
-  * <code>sudo apt install apt-file</code>
-  * <code>sudo apt update</code>
-  * <code>apt-file find libOpenCL.so</code>
-  * <code>sudo add-apt-repository ppa:intel-opencl/intel-opencl</code>
-  * <code>sudo apt update</code>
   * <code>sudo apt install intel-opencl-icd</code>
+  * Check your Intel device with <code>clinfo</code>
 ## Notification
 - [ ]  Some commands may need 'sudo'
 - [ ]  Refer to https://docs.tvm.ai/install/from_source.html
@@ -144,3 +139,10 @@
 * pip3 install cmake
 * sudo ln /home/[account_name]/.local/bin/cmake /usr/bin/cmake
 * cmake --version
+* Deploy OpenCL runtime of Intel graphics
+  * <code>sudo apt install apt-file</code>
+  * <code>sudo apt update</code>
+  * <code>apt-file find libOpenCL.so</code>
+  * <code>sudo add-apt-repository ppa:intel-opencl/intel-opencl</code>
+  * <code>sudo apt update</code>
+  * <code>sudo apt install intel-opencl-icd</code>
