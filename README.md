@@ -6,16 +6,13 @@
 * <code>pip3 install apache-tvm-cu102 -f https://tlcpack.ai/wheels</code>
 * Check [TLCPack](https://tlcpack.ai/) for more TVM packages
 - - -
-## Enviroment
-- [ ] Linux (Ubuntu 18.04 LTS is tested)
-  - [ ] Find out installed graphics card by <code>sudo lshw -C display</code> or <code>lspci | grep -i --color 'vga\|3d\|2d'</code>
-- [ ] Upgrade graphics driver using Software Updater of Ubuntu
-  - [ ] Click on the 'Additional Drivers' tab
-  - [ ] Choose the latest driver provided by Ubuntu
-- [ ] CUDA toolkit version >= 8.0 is required
-  - [ ] Use 'nvidia-smi' to check your version
-  - [ ] Use 'sudo nvidia-settings' to configure NVIDIA graphics driver
-### Install OpenCL (tested on Ubuntu 22.04)
+## Check enviroment (tested on Ubuntu 18.04)
+* Find out installed graphics card by <code>sudo lshw -C display</code> or <code>lspci | grep -i --color 'vga\|3d\|2d'</code>
+
+* CUDA toolkit version >= 8.0 is required
+  * Use <code>nvidia-smi</code> to check your version
+  * Use <code>sudo nvidia-settings</code> to configure NVIDIA graphics driver
+## Install OpenCL (tested on Ubuntu 22.04)
 * Install OpenCL development files
   * <code>sudo apt install ocl-icd-opencl-dev</code>
 * Install the package of querying OpenCL information
@@ -146,3 +143,6 @@
   * <code>sudo add-apt-repository ppa:intel-opencl/intel-opencl</code>
   * <code>sudo apt update</code>
   * <code>sudo apt install intel-opencl-icd</code>
+* Upgrade graphics driver using Software Updater of Ubuntu
+  * Click on the 'Additional Drivers' tab
+  * Choose the latest driver provided by Ubuntu  
