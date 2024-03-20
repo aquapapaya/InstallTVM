@@ -35,6 +35,12 @@
 ## Install optional Python packages
 * <code>pip3 install --upgrade pip</code>
 * <code>pip3 install pillow tflite opencv-python easydict typing-extensions psutil scipy tornado cloudpickle</code>
+## List installed Python packages
+* <code>pip3 list</code> or <code>pip3 freeze</code>
+* Create requirements.txt
+  * <code>pip3 freeze > requirements.txt</code>
+* Install Python packages with requirements.txt
+  * <code>pip3 install -r requirements.txt</code>
 ## Install TVM from Source
 * cd ~
 * git clone --recursive https://github.com/apache/incubator-tvm.git
@@ -134,3 +140,6 @@
 ## Notification
 - [ ]  Some commands may need 'sudo'
 - [ ]  Refer to https://docs.tvm.ai/install/from_source.html
+## Reference
+* https://note.nkmk.me/en/python-pip-list-freeze/
+* https://note.nkmk.me/en/python-pip-install-requirements/
