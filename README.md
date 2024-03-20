@@ -143,3 +143,4 @@
 ## Reference
 * https://note.nkmk.me/en/python-pip-list-freeze/
 * https://note.nkmk.me/en/python-pip-install-requirements/
+* https://tvm.apache.org/docs/install/from_source.html
