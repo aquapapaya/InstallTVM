@@ -1,19 +1,20 @@
-# How to Install TVM (tested on Ubuntu 20.04 and above)
-## Use pip for installing TVM
+# How to Install TVM 
+## Use pip for installing TVM (tested on Colab)
 ### CPU only
 * <code>pip3 install apache-tvm</code>
 ### CUDA and CPU
 * <code>pip3 install apache-tvm-cu102 -f https://tlcpack.ai/wheels</code>
 * Check [TLCPack](https://tlcpack.ai/) for more TVM packages
 - - -
-## Check enviroment 
+## Install from source files (tested on Ubuntu 20.04 and above)
+### Check enviroment 
 * Find out installed graphics card by
   * <code>sudo lshw -C display</code> or
   * <code>lspci | grep -i --color 'vga\|3d\|2d'</code>
 * CUDA toolkit version >= 8.0 is required
   * Use <code>nvidia-smi</code> to check your version
   * Use <code>sudo nvidia-settings</code> to configure NVIDIA graphics driver
-## Install OpenCL
+### Install OpenCL
 * Install OpenCL development files
   * <code>sudo apt install ocl-icd-opencl-dev</code>
 * Install the package of querying OpenCL information
@@ -21,7 +22,14 @@
 * Deploy OpenCL runtime of Intel graphics
   * <code>sudo apt install intel-opencl-icd</code>
   * Check your Intel device with <code>clinfo</code>
-## Install required libraries
+### Install Intel oneDNN
+* <code>wget https://github.com/oneapi-src/oneDNN/archive/refs/tags/v2.6.tar.gz</code>
+* <code>tar xf oneDNN-2.6.tar.gz</code>
+* <code>cd oneDNN-2.6/</code>
+* <code>cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib</code>
+* <code>make -j4</code>
+* <code>sudo make install</code>
+### Install required libraries
 - [ ] g++ 7.1 or higher
 - [ ] CMake 3.18 or higher
 - [ ] LLVM 4.0 or higher for CPU code generation
@@ -29,30 +37,37 @@
   * Use <code>llvm-config --version</code> to check your version
 * <code>sudo apt update</code>
 * <code>sudo apt install -y python3 python3-dev python3-setuptools gcc libtinfo-dev zlib1g-dev build-essential cmake vim git</code>
-## Install necessary Python packages
+### Install necessary Python packages
 * <code>sudo apt install -y python3-pip</code>
 * <code>pip3 install numpy decorator attrs</code>
-## Install optional Python packages
+### Install optional Python packages
 * <code>pip3 install --upgrade pip</code>
 * <code>pip3 install pillow tflite opencv-python easydict typing-extensions psutil scipy tornado cloudpickle</code>
-## List installed Python packages
+### List installed Python packages
 * <code>pip3 list</code> or <code>pip3 freeze</code>
 * Create requirements.txt
   * <code>pip3 freeze > requirements.txt</code>
 * Install Python packages with requirements.txt
   * <code>pip3 install -r requirements.txt</code>
-## Install TVM from Source
-* cd ~
-* git clone --recursive https://github.com/apache/incubator-tvm.git
-* cd incubator-tvm
-- [ ] Switch branches (optional)
-  * git checkout &lt;commit>
-* mkdir build
-* cp cmake/config.cmake build
-* cd build
+### Obtain source files
+#### From release
+* Download *.tar.gz (e.g. apache-tvm-src-v0.15.0.tar.gz) at [Release](https://github.com/apache/tvm/releases)
+* <code>tar zxvf</code> the downloaded *.tar.gz
+* Open a terminal and go to the directory containing decompressed files
+#### From Github
+* Open a terminal
+* <code>cd ~</code>
+* <code>git clone --recursive https://github.com/apache/tvm.git</code>
+* <code>cd tvm</code>
+* Switch branches (optional)
+  * <code>git checkout</code> a commit
+#### Build your own TVM
+* <code>mkdir build</code>
+* <code>cp cmake/config.cmake build</code>
+* <code>cd build</code>
 - [ ] Customize your compilation options
-  * vi config.cmake
-* cmake ..
+  * <code>vi config.cmake</code>
+* <code>cmake ..</code>
 * make -j4
 ## Set Environment Variable
 * cd ~
@@ -144,3 +159,4 @@
 * https://note.nkmk.me/en/python-pip-list-freeze/
 * https://note.nkmk.me/en/python-pip-install-requirements/
 * https://tvm.apache.org/docs/install/from_source.html
+* https://github.com/apache/tvm/blob/main/docker/install/ubuntu_install_dnnl.sh
