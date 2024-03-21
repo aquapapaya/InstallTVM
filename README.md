@@ -68,14 +68,13 @@
 - [ ] Customize your compilation options
   * <code>vi config.cmake</code>
 * <code>cmake ..</code>
-* make -j4
-## Set Environment Variable
-* cd ~
-* vi .bashrc
-- [ ] Add the following two to .bashrc
-  * export TVM_HOME=/root/incubator-tvm
-  * export PYTHONPATH=$TVM_HOME/python:$TVM_HOME/topi/python:$TVM_HOME/nnvm/python:${PYTHONPATH}
-* source .bashrc
+* <code>make -j4</code>
+#### Set environment variable
+* <code>vi ~/.bashrc</code>
+* Add the following two to ~/.bashrc
+  * export TVM_HOME=/path_to_your_own_TVM
+  * export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
+* <code>source ~/.bashrc</code>
 ## Install PAPI (Ver. 6 is required for TVM)
 * git clone https://bitbucket.org/icl/papi.git
 * cd papi/src/
@@ -160,3 +159,4 @@
 * https://note.nkmk.me/en/python-pip-install-requirements/
 * https://tvm.apache.org/docs/install/from_source.html
 * https://github.com/apache/tvm/blob/main/docker/install/ubuntu_install_dnnl.sh
+* https://github.com/oneapi-src/oneDNN
