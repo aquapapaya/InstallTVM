@@ -22,13 +22,6 @@
 * Deploy OpenCL runtime of Intel graphics
   * <code>sudo apt install intel-opencl-icd</code>
   * Check your Intel device with <code>clinfo</code>
-### Install Intel oneDNN
-* <code>wget https://github.com/oneapi-src/oneDNN/archive/refs/tags/v2.6.tar.gz</code>
-* <code>tar xf oneDNN-2.6.tar.gz</code>
-* <code>cd oneDNN-2.6/</code>
-* <code>cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib</code>
-* <code>make -j4</code>
-* <code>sudo make install</code>
 ### Install required libraries
 - [ ] g++ 7.1 or higher
 - [ ] CMake 3.18 or higher
@@ -37,6 +30,13 @@
   * Use <code>llvm-config --version</code> to check your version
 * <code>sudo apt update</code>
 * <code>sudo apt install -y python3 python3-dev python3-setuptools gcc libtinfo-dev zlib1g-dev build-essential cmake vim git</code>
+### Install Intel oneDNN
+* <code>wget https://github.com/oneapi-src/oneDNN/archive/refs/tags/v2.6.tar.gz</code>
+* <code>tar xf v2.6.tar.gz</code>
+* <code>cd oneDNN-2.6/</code>
+* <code>cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib</code>
+* <code>make -j4</code>
+* <code>sudo make install</code>
 ### Install necessary Python packages
 * <code>sudo apt install -y python3-pip</code>
 * <code>pip3 install numpy decorator attrs</code>
