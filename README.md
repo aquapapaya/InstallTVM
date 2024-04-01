@@ -37,17 +37,14 @@
 * <code>cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib</code>
 * <code>make -j4</code>
 * <code>sudo make install</code>
-### Install ONNX packages
-* <code>pip3 install onnx onnxoptimizer</code>
-### Install ONNX Runtime
-* For CPU: <code>pip3 install onnxruntime</code>
-* For GPU: <code>pip3 install onnxruntime-gpu</code>
 ### Install necessary Python packages
 * <code>sudo apt install -y python3-pip</code>
+* <code>pip3 install --upgrade pip</code>
 * <code>pip3 install numpy decorator attrs</code>
 ### Install optional Python packages
-* <code>pip3 install --upgrade pip</code>
 * <code>pip3 install pillow tflite opencv-python easydict typing-extensions psutil scipy tornado cloudpickle</code>
+* Install ONNX packages: <code>pip3 install onnx onnxoptimizer</code>
+* Install ONNX Runtime: <code>pip3 install onnxruntime</code> for CPU; <code>pip3 install onnxruntime-gpu</code> for GPU
 ### List installed Python packages
 * <code>pip3 list</code> or <code>pip3 freeze</code>
 * Create requirements.txt
