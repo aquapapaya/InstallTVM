@@ -77,6 +77,8 @@
   * export TVM_HOME=/path_to_your_own_TVM
   * export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
 * <code>source ~/.bashrc</code>
+### Verify the installed TVM
+* <code>python3 -c "import tvm"</code>
 - - -
 ## Install PAPI (Ver. 6 is required for TVM)
 * git clone https://bitbucket.org/icl/papi.git
