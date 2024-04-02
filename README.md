@@ -63,7 +63,7 @@
 * <code>cd tvm</code>
 * Switch branches (optional)
   * <code>git checkout</code> a commit
-#### Build your own TVM
+### Build your own TVM
 * <code>mkdir build</code>
 * <code>cp cmake/config.cmake build</code>
 * <code>cd build</code>
@@ -71,7 +71,7 @@
   * <code>vi config.cmake</code>
 * <code>cmake ..</code>
 * <code>make -j4</code>
-#### Set environment variable
+### Set environment variable
 * <code>vi ~/.bashrc</code>
 * Add the following two to ~/.bashrc
   * export TVM_HOME=/path_to_your_own_TVM
