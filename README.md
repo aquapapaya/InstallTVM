@@ -83,7 +83,7 @@
 * Download a quantized [MobileNetV2](https://www.kaggle.com/models/tensorflow/mobilenet-v2/frameworks/tfLite/variations/1-0-224-quantized/versions/1?tfhub-redirect=true
 ) from Kaggle Models and extract it
 * Download [compile_run_mobilenetv2.py](compile_run_mobilenetv2.py) and run <code>python3 compile_run_mobilenetv2.py</code>
-* Expected result: <code>Prediction: id 282 name: tabby</code>
+* Expected result: <code>Prediction=> id: 282 name: tabby</code>
 - - -
 ## Install PAPI (Ver. 6 is required for TVM)
 * git clone https://bitbucket.org/icl/papi.git
