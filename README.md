@@ -42,7 +42,7 @@
 * <code>pip3 install --upgrade pip</code>
 * <code>pip3 install numpy decorator attrs</code>
 ### Install optional Python packages
-* <code>pip3 install pillow tflite opencv-python easydict typing-extensions psutil scipy tornado cloudpickle</code>
+* <code>pip3 install pillow tensorflow tflite opencv-python easydict typing-extensions psutil scipy tornado cloudpickle</code>
 * Install ONNX packages: <code>pip3 install onnx onnxoptimizer</code>
 * Install ONNX Runtime: <code>pip3 install onnxruntime</code> for CPU; <code>pip3 install onnxruntime-gpu</code> for CUDA
 ### List installed Python packages
