@@ -117,5 +117,5 @@ print("Inference time: %f" % (timeEnd - timeStart))
 # Get Top-1 output
 tvm_output = module.get_output(0).asnumpy()
 top5 = tvm_output[0].argsort()[-5:][::-1]
-print("Prediction: id " + str(top5[0]) + " name: " + imagenet_labels[top5[0]])
+print("Prediction=> id: " + str(top5[0]) + " name: " + imagenet_labels[top5[0]])
 
