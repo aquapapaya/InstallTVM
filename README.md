@@ -79,6 +79,11 @@
 * <code>source ~/.bashrc</code>
 ### Verify the installed TVM
 * <code>python3 -c "import tvm"</code>
+### Compile and run pre-trained TFLite model
+* Download a quantized [MobileNetV2](https://www.kaggle.com/models/tensorflow/mobilenet-v2/frameworks/tfLite/variations/1-0-224-quantized/versions/1?tfhub-redirect=true
+) from Kaggle Models and extract it
+* Download [compile_run_mobilenetv2.py](compile_run_mobilenetv2.py) and run <code>python3 compile_run_mobilenetv2.py</code>
+* Expected result: <code>Prediction: id 282 name: tabby</code>
 - - -
 ## Install PAPI (Ver. 6 is required for TVM)
 * git clone https://bitbucket.org/icl/papi.git
@@ -165,3 +170,4 @@
 * https://tvm.apache.org/docs/install/from_source.html
 * https://github.com/apache/tvm/blob/main/docker/install/ubuntu_install_dnnl.sh
 * https://github.com/oneapi-src/oneDNN
+* https://tvm.apache.org/docs/how_to/compile_models/from_tflite.html#sphx-glr-how-to-compile-models-from-tflite-py
