@@ -87,11 +87,16 @@
 - - -
 # Tips on TVM
 ## Export data
-* <code>print(lib.get_params()) # show the params</code>
-* <code>print(lib.get_lib().imported_modules) # show all modules generated with relay.build</code>
-* <code>print(lib.get_lib().imported_modules[0].get_source()) # print host llvm code</code>
-* <code>print(lib.get_lib().imported_modules[1].get_source()) # print dev code</code>
-* <code>print(lib.get_executor_config()) # return internal configuration</code>
+* Show parameter(weight)
+  * <code>print(lib.get_params())</code>
+* show all modules generated with relay.build
+  * <code>print(lib.get_lib().imported_modules)</code>
+* Print host llvm code
+  * <code>print(lib.get_lib().imported_modules[0].get_source())</code>
+* Print device code
+  * <code>print(lib.get_lib().imported_modules[1].get_source())</code>
+* Return internal configuration
+  * <code>print(lib.get_executor_config())</code>
 ## Install PAPI (Ver. 6 is required for TVM)
 * git clone https://bitbucket.org/icl/papi.git
 * cd papi/src/
