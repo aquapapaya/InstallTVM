@@ -85,6 +85,13 @@
 * Download [compile_run_mobilenetv2.py](compile_run_mobilenetv2.py) and run <code>python3 compile_run_mobilenetv2.py</code>
 * Expected result: <code>Prediction=> id: 282 name: tabby</code>
 - - -
+# Tips on TVM
+## Export data
+* <code>print(lib.get_params()) # show the params</code>
+* <code>print(lib.get_lib().imported_modules) # show all modules generated with relay.build</code>
+* <code>print(lib.get_lib().imported_modules[0].get_source()) # print host llvm code</code>
+* <code>print(lib.get_lib().imported_modules[1].get_source()) # print dev code</code>
+* <code>print(lib.get_executor_config()) # return internal configuration</code>
 ## Install PAPI (Ver. 6 is required for TVM)
 * git clone https://bitbucket.org/icl/papi.git
 * cd papi/src/
